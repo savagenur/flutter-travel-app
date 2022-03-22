@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_cubit/misc/colors.dart';
 import 'package:flutter_cubit/widgets/app_large_text.dart';
 import 'package:flutter_cubit/widgets/app_text.dart';
@@ -156,10 +154,13 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                               borderRadius: BorderRadius.circular(20),
                               color: Colors.grey,
                               image: DecorationImage(
-                                  image: AssetImage("img/"+images.keys.elementAt(index)),
+                                  image: AssetImage(
+                                      "img/" + images.keys.elementAt(index)),
                                   fit: BoxFit.cover)),
                         ),
-                        SizedBox(height: 10,),
+                        SizedBox(
+                          height: 10,
+                        ),
                         Container(
                           child: AppText(
                             text: images.values.elementAt(index),
