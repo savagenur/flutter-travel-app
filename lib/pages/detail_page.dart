@@ -13,7 +13,7 @@ class DetailPage extends StatefulWidget {
 }
 
 class _DetailPageState extends State<DetailPage> {
-  int gottenStars = 4;
+  int gottenStars = 3;
   int selectedIndex = -1;
   @override
   Widget build(BuildContext context) {

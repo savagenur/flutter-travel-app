@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             ),
           ),
           Container(
-            height: 270,
+            height: 270, 
             padding: const EdgeInsets.only(left: 20),
             width: double.maxFinite,
             child: TabBarView(controller: _tabController, children: [
