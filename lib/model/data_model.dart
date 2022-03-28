@@ -28,3 +28,14 @@ class DataModel {
         location: json['location']);
   }
 }
+
+// class DataModel1 {
+//   String name;
+//   int price;
+
+//   DataModel1({required this.name, required this.price});
+
+//   factory DataModel1.fromJson(Map<String, dynamic> json) {
+//     return DataModel1(name: json['name'], price: json['price']);
+//   }
+// }

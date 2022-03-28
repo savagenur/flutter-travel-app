@@ -11,7 +11,10 @@ class DataServices {
     try {
       if (res.statusCode == 200) {
         List<dynamic> list = json.decode(res.body);
-        return list.map((e) => DataModel.fromJson(e)).toList();
+        // print(list);
+        return  list.map((e) => DataModel.fromJson(e)).toList();
+        // print(x);
+        
       } else {
         return <DataModel>[];
       }
@@ -24,20 +27,22 @@ class DataServices {
 
 // import 'dart:convert';
 
+// import 'package:flutter_cubit/model/data_model.dart';
 // import 'package:http/http.dart' as http;
 
 // class DataServices {
 //   String baseUrl = 'http://mark.bslmeiyu.com/api';
-//   getInfo() async {
+//   Future<List<DataModel>> getInfo() async {
 //     var apiUrl = '/getplaces';
 //     http.Response res = await http.get(Uri.parse(baseUrl + apiUrl));
 //     try {
-//       if(res.statusCode==200){
+//       if (res.statusCode == 200) {
 //         List<dynamic> list = json.decode(res.body);
-//         return list.map((e) => null)
+//         return list.map((e) => DataModel.fromJson(e)).toList();
 //       }
 //     } catch (e) {
 //       print(e);
 //     }
+//     return <DataModel>[];
 //   }
 // }
